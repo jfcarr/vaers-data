@@ -26,7 +26,7 @@ make create
 
 This will create a SQLite database named vaers.db, and load it with VAERS data.  Schema information is in docs/data_dictionary.md.
 
-The source script is sql_scripts/create_and_load_tables.sql
+The source script is [sql_scripts/create_and_load_tables.sql](sql_scripts/create_and_load_tables.sql)
 
 **Warning:** If a vaers.db file already exists, it will be emptied and reloaded.
 
@@ -45,7 +45,7 @@ STATE | CAGE_YR | SEX | HOSPITAL | HOSPDAYS | VAX_DATE | VAX_TYPE | VAX_MANU | V
 OH | 50 | M | Y | | 2021-03-19 | COVID19 | PFIZER\BIONTECH | EN6202    
 OH | 50 | M | Y | 2 | 2021-04-08 | COVID19 | MODERNA | 039B21A
 
-The source script is sql_scripts/example_cov19_M_50yr_OH_hosp.sql
+The source script is [sql_scripts/example_cov19_M_50yr_OH_hosp.sql](sql_scripts/example_cov19_M_50yr_OH_hosp.sql)
 
 ### pandas
 
@@ -56,6 +56,8 @@ Load COVID19 vaccination data into a pandas dataframe, print a summary of the da
 ```bash
 make panda1
 ```
+
+The source script is [panda1.py](panda1.py)
 
 Results:
 

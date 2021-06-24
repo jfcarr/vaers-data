@@ -54,10 +54,10 @@ The SQLite database can be used as a data source for the pandas data analysis li
 Load COVID19 vaccination data into a pandas dataframe, print a summary of the dataframe, and calculate the correlation between reported age and calculated age:
 
 ```bash
-make panda1
+make db1
 ```
 
-The source script is [panda1.py](panda1.py)
+The source script is [panda_corr_db.py](panda_corr_db.py)
 
 Results:
 
@@ -80,3 +80,9 @@ Correlation between AGE_YRS and CAGE_YR: 0.9929779152633482
 ```
 
 The correlation between reported age (AGE_YRS) and calculated age (CAGE_YR) is very strong, as expected.
+
+You can also load the data directly from the source CSV, and calculate correlations:
+
+```bash
+make csv1
+```

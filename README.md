@@ -9,7 +9,10 @@ This repo includes VAERS data, symptom information, and vaccine information file
 * Linux
 * SQLite3
 * Python 3
-* pandas library.  (Install with: `pip3 install pandas`)
+* Python libraries:
+  * sqlite3 -> `pip3 install sqlite3`
+  * numpy -> `pip3 install numpy`
+  * pandas -> `pip3 install pandas`
 
 ## Steps
 
@@ -86,3 +89,5 @@ You can also load the data directly from the source CSV, and calculate correlati
 ```bash
 make csv1
 ```
+
+The source script is [panda_corr_csv.py](panda_corr_csv.py)
